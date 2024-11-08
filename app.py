@@ -10,7 +10,7 @@ import os
 import json
 
 # Initialize OpenAI client
-client = OpenAI(api_key="sk-your-actual-key-here")  # Replace with your actual OpenAI key
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 # File to store embeddings cache
 CACHE_FILE = "embeddings_cache.json"
